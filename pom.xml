@@ -5,14 +5,14 @@
     <groupId>hanulhan.jms.reqreply.topic</groupId>
     <artifactId>master</artifactId>
     <version>1.0</version>
-    <name>JmsReqReply :: Topic :: Parent</name>
+    <name>JmsReqReply :: Topic :: Master</name>
     <packaging>pom</packaging>
     
     <modules>
         <module>util</module>
         <module>server</module>
-		<module>client</module>
-		<module>pollingClient</module>
+        <module>client</module>
+        <module>pollingClient</module>
     </modules>
 
     <properties>
@@ -85,7 +85,7 @@
                 <artifactId>client</artifactId>
                 <version>${project.version}</version>
             </dependency>
-			<dependency>
+            <dependency>
                 <groupId>hanulhan.jms.reqreply.topic</groupId>
                 <artifactId>pollingClient</artifactId>
                 <version>${project.version}</version>

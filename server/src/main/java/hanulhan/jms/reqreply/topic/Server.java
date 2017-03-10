@@ -155,7 +155,7 @@ public class Server implements MessageListener {
                             response = this.session.createTextMessage();
                             response.setIntProperty(Settings.PROPERTY_NAME_COUNT, i);
                             response.setIntProperty(Settings.PROPERTY_NAME_TOTAL_COUNT, 3);
-                            response.setText("Server(" + serverId + ") Response " + i + "von 3 to msg: [" + messageText + "], Id: " + message.getJMSCorrelationID());
+                            response.setText("Server(" + serverId + ") Response " + i + " von 3 to msg: [" + messageText + "], Id: " + message.getJMSCorrelationID());
                             response.setJMSCorrelationID(message.getJMSCorrelationID());
                             LOGGER.log(Level.INFO, "Server(" + serverId + ") send response " 
                                                 + response.getStringProperty(Settings.PROPERTY_NAME_COUNT) 
